@@ -10,12 +10,18 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 .wrapper{
     width: 600px;
 }
 .content{
-    background: linear-gradient(white,black);
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
     padding: 60px;
 }
 
