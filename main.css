@@ -46,7 +46,21 @@ body{
     outline: none;
     font-size: 17px;
     border-radius: 4px;
+    margin-bottom: 10px;
 }
+.input button {
+    width: 30%;
+    height: 30px;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.input button:hover{
+    background: green;
+}
+
+
 
 
 
