@@ -11,6 +11,14 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
+.wrapper{
+    width: 600px;
+}
+.content{
+    background: linear-gradient(white,black);
+    padding: 60px;
+}
+
 
  
 
