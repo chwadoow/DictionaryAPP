@@ -6,30 +6,3 @@ const audio= document.querySelector('audio')
 
 
 
-search_btn.addEventListener('click',e=>{ 
-    e.preventDefault()
-
-    const word = input.value ;
-    if(word===''){
-        alert('Please type a word')
-        return;
-        
-    }
-    getTheData(word)
-})
-
-function getTheData(word){
-    fetch(`https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${apiKey}`)
-        .then(res=>res.json())
-        .then(res=>{ 
-   
-            if(!res.length){
-                not_found.innerText='no results'
-            return;
-         }
-            
-            let definition =res[0].shortdef[0]         
-            not_found.innerText=definition
-
-            
- })}
