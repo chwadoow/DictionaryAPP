@@ -19,11 +19,24 @@ body{
 }
 .wrapper{
     width: 600px;
+    
+    
 }
 .content{
     background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
-    padding: 60px;
+    padding: 50px;
+    border-style: inset;
+    border-radius: 10px;
+
 }
+.content h2{
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 1px,solid#cccccc;
+    margin-bottom: 15px;
+}
+
 
 
  
