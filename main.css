@@ -36,6 +36,17 @@ body{
     border-bottom: 1px,solid#cccccc;
     margin-bottom: 15px;
 }
+.input{
+    display: flex;
+    flex-direction: column;
+}
+.input input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-radius: 4px;
+}
 
 
 
