@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Rubik+Moonrocks&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -21,32 +22,37 @@ body{
     width: 600px;
     
     
+    
 }
 .content{
     background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
     padding: 50px;
     border-style: inset;
     border-radius: 10px;
+    height: 450px;
 
 }
 .content h2{
-    color: #fff;
+    color: black;
     text-align: center;
     font-size: 30px;
     border-bottom: 1px,solid#cccccc;
     margin-bottom: 15px;
+    font-family: 'Rubik Moonrocks', cursive;
 }
 .input{
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 .input input{
-    padding: 10px;
+    padding: 30px;
     border: none;
     outline: none;
     font-size: 17px;
     border-radius: 4px;
     margin-bottom: 10px;
+    
 }
 .input button {
     width: 30%;
