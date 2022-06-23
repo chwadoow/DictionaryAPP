@@ -4,8 +4,9 @@ const not_found=document.getElementById('not_found')
 const apiKey = '48d3b1d2-f6ec-41e4-81c8-ce914ebe2e72'
 const audio= document.querySelector('audio')
 const theHearts = document.getElementById("liker")
-const EMPTY_HEART = '♡'
+
 const FULL_HEART = '♥'
+const quote= document.querySelector('.quote')
 
 
 
@@ -46,11 +47,21 @@ theHearts.addEventListener('click',function likerFunc(e){
     theHearts.appendChild(newLike)
     e.reset()
 
-
-    
 }
     
 );
+document.addEventListener('DOMContentLoaded',function (){
+    fetch("https://type.fit/api/quotes")
+    .then( res=> res.json() )
+    .then(res=>{
+        quote.innerText=res[1].text
+        
+       
+
+}
+        
+)}     )
+;
 
 
     

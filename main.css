@@ -67,10 +67,20 @@ body{
 }
 
 #liker{
-    color: red;
+    background-color : yellow;
+
+}
+.qtquote{
+    color: #fff;
     
-
-
+   
+    
+}
+.quote{
+    color: rgb(0, 2, 128);
+    font-size: larger;
+    font-family: 'Rubik Moonrocks', cursive;
+    
 }
 
 
