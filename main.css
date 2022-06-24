@@ -71,8 +71,9 @@ body{
 
 }
 .qtquote{
-    color: #fff;
-    
+    background-image: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+    border-style: inset;
+   
    
     
 }
@@ -80,6 +81,7 @@ body{
     color: rgb(0, 2, 128);
     font-size: larger;
     font-family: 'Rubik Moonrocks', cursive;
+    
     
 }
 
