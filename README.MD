@@ -1,6 +1,7 @@
 # Dictionary application
 
-This is my README.md file for my dictionary application. Created from a weeks learning of javascript. I have put my knowledge of DOM manipulation, eventlisteners, and fetching data from an API.
+## Brief project overview
+This is my README.md file for my dictionary application. Created from a weeks learning of javascript. I have put my knowledge of DOM manipulation, eventlisteners, and fetching data from an API. It is a fun app than javascript beginner can attempt. The code and important application can be found below.
 ## LANGUAGES USED:
 CSS HTML and JAVASCRIPT
 
