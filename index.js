@@ -11,7 +11,7 @@ const quote= document.querySelector('.quote')
 
 
 search_btn.addEventListener('click',e=>{ 
-    e.preventDefault()
+    e.preventDefault()//prevent page reload
 
     const word = input.value ;
     if(word===''){
@@ -19,13 +19,16 @@ search_btn.addEventListener('click',e=>{
         return;
         
     }
-    getTheData(word)
+    getTheData(word) //function that fetches data from dictionary API.
 })
 
 
 function getTheData(word){
-    fetch(`https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${apiKey}`)
-        .then(res=>res.json())
+    fetch(`https://www.dictionaryapi.com/api/v3/references/learners/json/${word}?key=${apiKey}`)//fetch keyword used to make a request to API
+        .then(res=>res.json())//.this keyword gets the response from server
+                              // the .json converts the response from json format
+
+
         .then(res=>{ 
    
             if(!res.length){
@@ -35,7 +38,7 @@ function getTheData(word){
             
             let definition =res[0].shortdef[0]         
             not_found.innerText=definition
-
+            //above is how the translated json respose is displayed using DOM manipulation 
             
  })}
 
@@ -46,6 +49,7 @@ theHearts.addEventListener('click',function likerFunc(e){
     newLike.innerText=FULL_HEART
     theHearts.appendChild(newLike)
     e.reset()
+    //liker event listener 
 
 }
     
@@ -55,6 +59,7 @@ document.addEventListener('DOMContentLoaded',function (){
     .then( res=> res.json() )
     .then(res=>{
         quote.innerText=res[1].text
+        //this my second request from another API that manipulates the DOM to display on screen
         
        
 
@@ -62,11 +67,6 @@ document.addEventListener('DOMContentLoaded',function (){
         
 )}     )
 ;
-
-
-    
-
-
 
 
 
